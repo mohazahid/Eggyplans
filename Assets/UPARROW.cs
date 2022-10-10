@@ -11,7 +11,7 @@ public class UPARROW : MonoBehaviour
     public double Timer = .2;
     private int eCount = 0;
     private int pCount = 0;
-    
+
     [SerializeField] Vector3 _axis = Vector3.forward;
     private int speed = 20;
     // Start is called before the first frame update
@@ -22,7 +22,8 @@ public class UPARROW : MonoBehaviour
     public TMP_Text Eg;
     public TMP_Text pd;
     // Update is called once per frame
-    void Update() {
+    void Update()
+    {
         Eg.text = "Eggs on Screen " + EggCount();
         pd.text = "Planes destoryed (Hero) " + pCount;
         if (Input.GetKey("space"))
@@ -68,13 +69,19 @@ public class UPARROW : MonoBehaviour
                 speed -= 1;
             }
         }
+        if (Input.GetKeyDown("q"))
+        {
+            Application.Quit();
+        }
     }
-    int EggCount() {
+    int EggCount()
+    {
         GameObject[] pln = GameObject.FindGameObjectsWithTag("Egg");
         int count = pln.Length;
         return count;
     }
-    int PlaneDesHero(int value) {
+    int PlaneDesHero(int value)
+    {
         Debug.Log(pCount);
         return pCount += value;
     }

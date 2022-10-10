@@ -29,7 +29,7 @@ public class Contorl : MonoBehaviour
     {
         GameObject[] pln = GameObject.FindGameObjectsWithTag("Enemy");
         int count = pln.Length;
-        allPlanes.text = "All Planes destoryed " + desPlane;
+        allPlanes.text = "Count "+ count +" All Planes destoryed " + desPlane;
         while (count < 10)
         {
             spawn();

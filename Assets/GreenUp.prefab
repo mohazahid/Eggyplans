@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 3149822414253590337}
   - component: {fileID: 6535256800326391143}
   - component: {fileID: 4314834481116567449}
-  - component: {fileID: 4421716576356434388}
   - component: {fileID: 1411211740847039426}
   - component: {fileID: 4381202603680154669}
+  - component: {fileID: -3121390436834197682}
   m_Layer: 0
   m_Name: GreenUp
   m_TagString: Player
@@ -159,23 +159,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!114 &4421716576356434388
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3149822414253590336}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6affe5da8ee732a43ab063e85977f75c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefab: {fileID: 5296541899031009376, guid: 46dd90c8ea4e6954d8f61ecdfbc925a9, type: 3}
-  Timer: 0.2
-  Eggcount: 
-  _axis: {x: 0, y: 0, z: 1}
-  Eg: {fileID: 0}
 --- !u!222 &1411211740847039426
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -273,3 +256,20 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &-3121390436834197682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3149822414253590336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 886562cad37564d44b470f630928abcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 5296541899031009376, guid: 46dd90c8ea4e6954d8f61ecdfbc925a9, type: 3}
+  Timer: 0.2
+  _axis: {x: 0, y: 0, z: 1}
+  Eg: {fileID: 0}
+  pd: {fileID: 0}

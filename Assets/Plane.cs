@@ -50,5 +50,4 @@ public static class ExtensionMethods
         material.color = color;
     }
 
-
 }
